@@ -20,10 +20,10 @@ export default async function Page({ images  }: Props) {
   return (
     <div className="container flex flex-wrap mx-auto">
       <div className="w-full p-2 rounded lg:w-1/3">
-        <Image src="/images/galaxy1.jpg" placeholder="blur" width={720} height={480} alt="Universe Picture" />
+        <Image src="/images/galaxy1.jpg" width={720} height={480} alt="Universe Picture" />
       </div>
       <div className="w-full p-2 rounded lg:w-1/3">
-        <Image src="/images/galaxy2.jpg" placeholder="blur" width={720} height={480} alt="Universe Picture" />
+        <Image src="/images/galaxy2.jpg" width={720} height={480} alt="Universe Picture" />
       </div>
     </div>
   );
