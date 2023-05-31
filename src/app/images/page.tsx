@@ -3,20 +3,19 @@ import Image from 'next/image';
 import cloudinary from '@/utils/cloudinary';
 
 export interface ImageProps {
-  id: number
-  height: string
-  width: string
-  public_id: string
-  format: string
-  blurDataUrl?: string
+  id: number;
+  height: string;
+  width: string;
+  public_id: string;
+  format: string;
+  blurDataUrl?: string;
 }
 
 type Props = {
   images: any;
 };
 
-
-export default async function Page({ images  }: Props) {
+export default async function Page({ images }: Props) {
   return (
     <div className="container flex flex-wrap mx-auto">
       <div className="w-full p-2 rounded lg:w-1/3">
@@ -40,8 +39,7 @@ export default async function Page({ images  }: Props) {
 
 //   let i = 0
 //   for (let result of results.resources) {
-    
-    
+
 //     reducedResults.push({
 //       id: i,
 //       height: result.height,
