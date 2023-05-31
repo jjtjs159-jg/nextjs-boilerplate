@@ -1,3 +1,4 @@
+import Header from '@/components/Headers/Header';
 import './globals.css';
 
 export const metadata = {
@@ -8,7 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main className="flex flex-col w-full max-w-screen-2xl mx-auto">{children}</main>
+      </body>
     </html>
   );
 }
