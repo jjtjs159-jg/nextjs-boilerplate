@@ -9,9 +9,7 @@ export default function Footer() {
           <div className="flex justify-between">
             {Array.from(Array(5)).map((column, index) => (
               <div key={`${column}_${index}`}>
-                <h4 className="block font-semibold">
-                  Text {column}
-                </h4>
+                <h4 className="block font-semibold">Text {column}</h4>
                 <div className="text-sm leading-6">
                   {Array.from(Array(5)).map((item, index) => (
                     <Link href="/" className="block my-3" key={`${item}__${index}`}>
@@ -24,9 +22,7 @@ export default function Footer() {
           </div>
           <div className="flex justify-between items-end mt-11">
             <div className="text-gray-800">
-              <p className="text-sm leading-6 font-semibold">
-                Made by jgpark
-              </p>
+              <p className="text-sm leading-6 font-semibold">Made by jgpark</p>
             </div>
             <div className="flex items-center gap-3 py-2 px-3 border rounded-full">
               <button type="button">
@@ -43,5 +39,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
