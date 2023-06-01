@@ -2,8 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaBell } from 'react-icons/fa';
 
-import styles from './Header.module.scss';
-
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b">
@@ -34,7 +32,7 @@ export default function Header() {
                 </ul>
               </nav>
               <div className="flex items-center ml-6 pl-6 border-l border-gray-400">
-                <button className={styles.button} type="button">
+                <button type="button">
                   <FaBell className="w-5 h-5" />
                 </button>
                 <Link href="/" className="ml-6">
