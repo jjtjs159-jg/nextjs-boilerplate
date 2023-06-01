@@ -1,4 +1,5 @@
 import Header from '@/components/Headers/Header';
+import Footer from '@/components/Footers/Footer';
 import './globals.css';
 
 export const metadata = {
@@ -12,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Header />
         <main className="flex flex-col w-full max-w-screen-2xl mx-auto">{children}</main>
+        <Footer />
       </body>
     </html>
   );
