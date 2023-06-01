@@ -4,7 +4,7 @@ import { FaGithub, FaBell } from 'react-icons/fa';
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b">
+    <header className="sticky top-0 z-40 w-full border-b bg-gray-300">
       <div className="max-w-7xl mx-auto">
         <div className="py-4 mx-4">
           <div className="flex items-center">
