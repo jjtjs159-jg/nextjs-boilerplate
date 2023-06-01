@@ -1,0 +1,56 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: calc(100vh - 12rem);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  grid-gap: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  position: relative;
+  padding: 56px 16px 16px 16px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 6px 0px, rgba(0, 0, 0, 0.1) 0px 8px 15px 0px, rgba(100, 100, 100, 0.1) 0px 0px 0px 1px;
+  transition: box-shadow .25s;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 6px 0px, rgba(0, 0, 0, 0.3) 0px 15px 25px 0px, rgba(100, 100, 100, 0.2) 0px 0px 0px 1px;
+  }
+}
+
+.icon {
+  display: inline-flex;
+  background-color: rgba(24, 24, 27, 0.04);
+  border: 1px solid rgba(10, 10, 10, 0.12);
+  border-radius: 9999px;
+  padding: 8px;
+}
+
+.shape {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.title {
+  margin-top: 12px;
+  margin-bottom: 4px;
+  color: #000000;
+  font-size: 14px;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.7rem;
+  color: #5f5f66;
+}
