@@ -2,17 +2,22 @@
 
 import { useEffect, useState } from 'react';
 
-type ThemeValue = 'dark' | 'light';
+type ThemeValue = 'dark' | 'light' | 'system';
 
 export default function useTheme() {
   const [currentTheme, setCurrentTheme] = useState<ThemeValue>();
 
   const handleThemeChange = (theme: ThemeValue) => {
-    setCurrentTheme(theme);
+    if (theme === 'system') {
+      localStorage.removeItem('theme');
+    }
+
+    if (theme !== 'system') {
+      setCurrentTheme(theme);
+    }
   };
 
   const handleThemeToggle = () => {
-    console.log(currentTheme);
     if (currentTheme === 'dark') {
       setCurrentTheme('light');
     } else {

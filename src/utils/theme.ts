@@ -1,7 +1,7 @@
-const initThemeScript = `(function() {
-  ${initTheme.toString()}
-  initTheme();
-})()`;
+// const initThemeScript = `(function() {
+//   ${initTheme.toString()}
+//   initTheme();
+// })()`;
 
 export function initTheme() {
   function getInitialTheme() {
