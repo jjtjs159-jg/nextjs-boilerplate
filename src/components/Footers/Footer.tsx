@@ -5,7 +5,7 @@ import { FiSun, FiMoon } from 'react-icons/fi';
 export default function Footer() {
   return (
     <footer className="w-full border-t">
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto max-w-7xl">
         <div className="py-4 mx-4">
           <div className="flex justify-between">
             {Array.from(Array(5)).map((column, index) => (
@@ -21,11 +21,11 @@ export default function Footer() {
               </div>
             ))}
           </div>
-          <div className="flex justify-between items-end mt-11">
+          <div className="flex items-end justify-between mt-11">
             <div className="text-gray-800">
-              <p className="text-sm leading-6 font-semibold">Made by jgpark</p>
+              <p className="text-sm font-semibold leading-6">Made by jgpark</p>
             </div>
-            <div className="flex items-center gap-3 py-2 px-3 border rounded-full">
+            <div className="flex items-center gap-3 px-3 py-2 border rounded-full">
               <button type="button">
                 <AiOutlineDesktop className="w-5 h-5" />
               </button>
