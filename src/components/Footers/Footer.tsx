@@ -1,8 +1,15 @@
+'use client';
+
 import Link from 'next/link';
+
 import { AiOutlineDesktop } from 'react-icons/ai';
 import { FiSun, FiMoon } from 'react-icons/fi';
 
+import useTheme from '@/hooks/useTheme';
+
 export default function Footer() {
+  const { onChange } = useTheme();
+
   return (
     <footer className="w-full border-t">
       <div className="mx-auto max-w-7xl">
@@ -26,13 +33,13 @@ export default function Footer() {
               <p className="text-sm font-semibold leading-6">Made by jgpark</p>
             </div>
             <div className="flex items-center gap-3 px-3 py-2 border rounded-full">
-              <button type="button">
+              <button type="button" onClick={() => onChange('system')}>
                 <AiOutlineDesktop className="w-5 h-5" />
               </button>
-              <button type="button">
+              <button type="button" onClick={() => onChange('light')}>
                 <FiSun className="w-5 h-5" />
               </button>
-              <button type="button">
+              <button type="button" onClick={() => onChange('dark')}>
                 <FiMoon className="w-5 h-5" />
               </button>
             </div>
