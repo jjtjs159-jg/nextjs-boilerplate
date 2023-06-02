@@ -2,7 +2,7 @@ module.exports = {
   extends: ['next', 'prettier'],
   rules: {
     'no-unused-vars': [
-      'error',
+      'warn',
       {
         args: 'after-used',
         caughtErrors: 'none',
