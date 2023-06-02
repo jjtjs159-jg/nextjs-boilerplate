@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaGithub, FaBell } from 'react-icons/fa';
+import { AiOutlineBell, AiOutlineGithub } from 'react-icons/ai';
 
 export default function Header() {
   return (
@@ -8,7 +8,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto">
         <div className="py-4 mx-4">
           <div className="flex items-center">
-            <Link href="/">
+            <Link href="/" aria-label="Go to the homepage">
               <Image src="/vercel.svg" alt="Vercel Logo" width={100} height={24} priority />
             </Link>
             <div className="flex items-center ml-auto">
@@ -32,11 +32,11 @@ export default function Header() {
                 </ul>
               </nav>
               <div className="flex items-center ml-6 pl-6 border-l border-gray-400">
-                <button type="button">
-                  <FaBell className="w-5 h-5" />
+                <button type="button" aria-label="Alert">
+                  <AiOutlineBell className="w-6 h-6" />
                 </button>
-                <Link href="/" className="ml-6">
-                  <FaGithub className="w-5 h-5" />
+                <Link href="/" className="ml-6" aria-label="Github">
+                  <AiOutlineGithub className="w-6 h-6" />
                 </Link>
               </div>
             </div>

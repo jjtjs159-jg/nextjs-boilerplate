@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { FaDesktop, FaSun, FaMoon } from 'react-icons/fa';
+import { AiOutlineDesktop } from 'react-icons/ai';
+import { FiSun, FiMoon } from 'react-icons/fi';
 
 export default function Footer() {
   return (
@@ -26,13 +27,13 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-3 py-2 px-3 border rounded-full">
               <button type="button">
-                <FaDesktop className="w-5 h-5" />
+                <AiOutlineDesktop className="w-5 h-5" />
               </button>
               <button type="button">
-                <FaSun className="w-5 h-5" />
+                <FiSun className="w-5 h-5" />
               </button>
               <button type="button">
-                <FaMoon className="w-5 h-5" />
+                <FiMoon className="w-5 h-5" />
               </button>
             </div>
           </div>
