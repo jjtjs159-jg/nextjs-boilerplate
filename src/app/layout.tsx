@@ -1,3 +1,5 @@
+import { initTheme } from '@/utils/theme';
+
 import Header from '@/components/Headers/Header';
 import Footer from '@/components/Footers/Footer';
 import './globals.css';
@@ -15,8 +17,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={inter.className}>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function() {
+              ${initTheme.toString()}
+              initTheme();
+            })()`,
+          }}
+        />
         <Header />
-        <main className="flex flex-col w-full max-w-screen-2xl mx-auto">{children}</main>
+        <main className="flex flex-col w-full mx-auto max-w-screen-2xl">{children}</main>
         <Footer />
       </body>
     </html>
