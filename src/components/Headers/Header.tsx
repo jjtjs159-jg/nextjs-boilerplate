@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+
 import { AiOutlineBell, AiOutlineGithub } from 'react-icons/ai';
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 w-full bg-gray-300 border-b">
+    <header className="sticky top-0 z-40 w-full bg-gray-300 border-b dark:bg-red-500">
       <div className="mx-auto max-w-7xl">
         <div className="py-4 mx-4">
           <div className="flex items-center">
