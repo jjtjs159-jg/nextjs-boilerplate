@@ -25,7 +25,7 @@ export default function Navigation({ navLinks }: Props) {
                 href={link.href}
                 className={
                   isActive
-                    ? 'text-blue-700 hover:text-green-700'
+                    ? 'text-blue-700'
                     : 'text-gray-600 hover:text-green-700'
                 }
               >
